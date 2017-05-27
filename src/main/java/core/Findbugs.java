@@ -8,8 +8,8 @@ public class Findbugs {
 	// FinalParametersCheck
 	@SuppressWarnings("null")
 	public static boolean A(String name) {
-		boolean n = (Boolean) null;
-		return n;
+		boolean nik = (Boolean) true;
+		return nik;
 	}
 	
 	// getSecurePassword

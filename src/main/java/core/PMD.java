@@ -9,9 +9,9 @@ public class PMD {
 	public class UselessParentheses {
 		void bar() {
 			int value = 0;
-			int i = 0;
-			String s = null;
-			value += (s.replaceAll("\\s", "").toLowerCase().charAt(i));
+			int init = 0;
+			String sarry = null;
+			value += (sarry.replaceAll("\\s", "").toLowerCase().charAt(init));
 
 		}
 	}
