@@ -45,10 +45,10 @@ public class PMD {
 
 	public class Foo {
 		void bar() {
-			for (; true;)
+			for  (; true;)
 				; // No Initialization or Update part, may as well be: while
 					// (true)
-		}
+	}
 	}
 
 	// ReturnFromFinallyBlock
