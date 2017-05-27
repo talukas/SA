@@ -2,25 +2,25 @@ package core;
 
 import java.math.BigInteger;
 // https://pmd.github.io/pmd-5.1.3/
-public class PMD {
+public class PMDtest {
 	
 
 	// Useless parentheses
 	public class UselessParentheses {
 		void bar() {
 			int value = 0;
-			int init = 0;
-			String sarry = null;
+			final int init = 0;
+			final String sarry = null;
 			value += (sarry.replaceAll("\\s", "").toLowerCase().charAt(init));
 
 		}
 	}
 	
 	// BigIntegerInstantiation
-	public void BigInteger() {
-		BigInteger bi1 = new BigInteger("1"); 	// reference BigInteger.ONE
+	public void bigInteger() {
+		final BigInteger bi1 = new BigInteger("1"); 	// reference BigInteger.ONE
 												// instead
-		BigInteger bi2 = new BigInteger("0"); 	// reference BigInteger.ZERO
+		final BigInteger bi2 = new BigInteger("0"); 	// reference BigInteger.ZERO
 												// instead
 		BigInteger bi3 = new BigInteger("0.0"); // reference BigInteger.ZERO
 												// instead
