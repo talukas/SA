@@ -7,7 +7,7 @@ public class Findbugs {
 
 	// FinalParametersCheck
 	@SuppressWarnings("null")
-	public static boolean A(String name) {
+	public static boolean Aria(String name) {
 		boolean nik = (Boolean) true;
 		return nik;
 	}
@@ -19,9 +19,9 @@ public class Findbugs {
 	}
 
 	static void abc() {	
-		int x = 2;
-		int y = 5;
-		double value1 =  x / y;
+		int xsio = 2;
+		int yang = 5;
+		double value1 =  xsio / yang;
 
 	}
 

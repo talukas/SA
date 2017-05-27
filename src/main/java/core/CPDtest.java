@@ -2,22 +2,22 @@ package core;
 
 import java.math.BigInteger;
 
-public class CPD {
+public class CPDtest {
 	
 
 	// Useless parentheses
 	public class UselessParentheses {
 		void bar() {
 			int value = 0;
-			int i = 0;
-			String s = null;
-			value += (s.replaceAll("\\s", "").toLowerCase().charAt(i));
+			final int init = 0;
+			final String strict = null;
+			value += (strict.replaceAll("\\s", "").toLowerCase().charAt(init));
 
 		}
 	}
 	
 	// BigIntegerInstantiation
-	public void BigInteger() {
+	public void bigInteger() {
 		BigInteger bi1 = new BigInteger("1"); 	// reference BigInteger.ONE
 												// instead
 		BigInteger bi2 = new BigInteger("0"); 	// reference BigInteger.ZERO
@@ -26,7 +26,7 @@ public class CPD {
 												// instead
 		BigInteger bi4;
 		bi4 = new BigInteger("0"); 				// reference BigInteger.ZERO instead
-		System.out.println(bi1 + ", " + bi2 + ", " + bi3 + ", " + bi4);
+		//System.out.println(bi1 + ", " + bi2 + ", " + bi3 + ", " + bi4);
 	}
 	
 	
@@ -35,7 +35,7 @@ public class CPD {
 		public void foo() {
 			for (int i = 0; i < 10; i++) { // only references 'i'
 				for (int k = 0; k < 20; i++) { // references both 'i' and 'k'
-					System.out.println("Hello");
+					//System.out.println("Hello");
 				}
 			}
 		}
@@ -43,10 +43,10 @@ public class CPD {
 
 	// ForLoopShouldBeWhileLoop
 
-	public class Foo {
+	public class finish {
 		void bar() {
-			for (; true;)
-				; // No Initialization or Update part, may as well be: while
+			for  (; true;);
+				// No Initialization or Update part, may as well be: while
 					// (true)
 		}
 	}
