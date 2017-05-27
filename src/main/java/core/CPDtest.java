@@ -29,17 +29,6 @@ public class CPDtest {
 		//System.out.println(bi1 + ", " + bi2 + ", " + bi3 + ", " + bi4);
 	}
 	
-	
-	// JumbledIncrementer
-	public class JumbledIncrementerRule1 {
-		public void foo() {
-			for (int i = 0; i < 10; i++) { // only references 'i'
-				for (int k = 0; k < 20; i++) { // references both 'i' and 'k'
-					//System.out.println("Hello");
-				}
-			}
-		}
-	}
 
 	// ForLoopShouldBeWhileLoop
 
