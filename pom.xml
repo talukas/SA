@@ -37,8 +37,8 @@
                                 </suiteXmlFiles>
                                 <properties>
                                        <property>
-                                             <name>testnames</name>
-                                             <value>Anagram</value>
+                                             <name>Test</name>
+                                             <value>SA</value>
                                        </property>
                                 </properties>
                          </configuration>
